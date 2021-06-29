@@ -1,523 +1,519 @@
-<!--
-This website is inspired from CodeWithHarry's channel.
-Here's the link of the video where I got inspiration 👇
-https://youtu.be/8KVrdL0VcAk
-
-So for those who are saying that this is copied code then you can compare his and mine website
-
-There are lot of differences you can see.
-So this is not a copied one
-Thanks for your understanding
+<!-- Created by ֎₳¥Ʉ$Ħ֎....
+Please Do not Copy....
+If you want to suggest me please suggest me in comments...
 -->
-
-
-
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Home</title>
-<link rel="icon" href="https://blob.sololearn.com/avatars/98826d47-c538-4acf-9dad-3da2239c8917.jpg">
-    <!-- HTML -->
-    <!-- Custom Styles -->
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Sniglet&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="phone.css" media="screen and (max-width: 1400px)" />
-</head>
-
-<style>
-    *{
-    margin: 0;
-    padding: 0;
+<html>
+    <head>
+        <title>Locker</title>
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+           <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        *{
+   overflow:hidden ;
+   margin:0;
+   padding:0;
+   outline:none;
 }
 
 
-/* Navigation Bar */
-.container{
-    position: sticky;
-    flex-direction: column;
+body {
+    background-color:#3b3b3b;
+    height:100vh;
+    width:100vw;
+   overflow:hidden ;
+   box-sizing:border-box ;
 }
 
-/* Home*/
-
-#home{
-    margin: auto;
+#head{
+    background:transparent ;
+    border:none;
+    position:absolute ;
+    top:3vh;
+    left:33vw;
+    font-size:1.5rem;
+    font-family:'Luckiest Guy',cursive;
+    color:#fff;
 }
-
-#black{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    height: 20rem;
-    width: 20rem;
-    margin-top: 3rem;
+#tat{
+    height:60vh;
+    width:80vw;
+    position:relative ;
+    left:0;
+    right:0;
+    top:10vh;
+    margin:auto;
+    justify-content:center;
+    align-items:center;
+    display:flex;
+    background-color:#3b3b3b;
+    border-radius:60px;
+    box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.35) ,
+   -3px -3px 5px -2px #655858;
+   
 }
-
-#black p{
-    font-size: 1rem;
-    width: 15rem;
-    margin: 5px;
-    padding: 5px;
-    margin: 15px 5px;
-    font-weight: normal;
-    text-align: center;
+.buttons{
+    position:relative;
+    left:5%;
+    width:61vw;
+    background-color:;
+    top:5vh;
 }
-
-#black h1{
-    margin-top: 4px;
+.bat{
+    position:relative ;
+    left:5%;
+    width:50vw;
+    bottom:-20%;
+    height:10vh;
+    top:5vh;
+    background-color:#BAB86C;
+    font-size:2rem;
+    border-radius:20%;
+    font-family:'Luckiest Guy', cursive;
+    border-style:none;
 }
-
-#black button{
-    display: block;
-    margin: auto;
+.bt{
+     height:10%;
+     width:15%;
 }
-
-
-/* Services*/
-
-#services{
-    flex-wrap: wrap;
+#za{
+   width:52vw;
 }
-
-.servBox{
-    width: 80vw;
-    margin: 2rem auto;
-}
-
-.servBox p{
-    padding: 1rem;
-}
-
-/* Contact Form */
-.form{
-    display: flex;
-    width: 80vw;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.form input{
-    display: block;
-    width: 15rem;
-    margin: auto;
-}
-
-#feedback{
-    display: block;
-    width: 15rem;
-    margin: auto;
-    margin-bottom: 20px;
-}
-
-/* Footer */
-
-#footer{
-    height: 12rem;
-}
-
-#footer li a{
-    /* margin: 2px; */
-    font-size: 0.8rem;
-}
-
-
-/* Utility Classes */
-.btn{
-    display: block;
-    margin-bottom: 5px;
-}
-
-.heading-primary {
-    font-size: 2rem;
-}
-* {
-    margin: 0px;
-    padding: 0px;
-    outline: none;
-    font-family: 'Sniglet', cursive;
-    box-sizing: border-box;
-}
-
-
-html{
-    scroll-behavior: smooth;
-}
-
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* ============LOGO============== */
-
-.logo {
-    position: relative;
-    margin: 10px;
-    font-size: 1.2rem;
-    text-align: left;
-}
-
-.logo img {
-    display: block;
-    height: 80px;
-    width: 80px;
-    border-radius: 100px;
-}
-
-/* ==================LOGO COMPLETE================ */
-
-
-
-/* ===============NAVBAR================*/
-
-#navbar {
-    position: relative;
-}
-
-#navbar ul {
-    padding-top: 10px;
-    display: flex;
-    height: 70px;
-    width: 60vw;
-    /* background-color: red; */
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    margin-left: 10px;
-    flex-wrap: wrap;
-    /* flex-shrink: 25;*/
-}
-
-#navbar ul li {
-    list-style: none;
-}
-
-#navbar ul li a {
-    text-decoration: none;
-    color: black;
-    font-size: 1.2rem;
-    padding: 10px;
-    transition: all 0.2s ease-in-out;
-}
-
-#navbar ul li a:hover {
-    background-color: black;
-    color: white;
-    border-radius: 1rem;
-    font-weight: bold;
-    font-size: 1rem;
-}
-
-/* =================NAVBAR COMPLETE================== */
-
-
-/* ==================SECTION HOME STARTS==================== */
-
-#black {
-    height: 18rem;
-    width: 55vw;
-    background-color: black;
-    margin-bottom: 50px;
-    border-radius: 20px;
-    box-shadow: 25px 25px 30px rgba(4, 24, 34, 255);
-}
-
-#home {
-    display: flex;
-    color: white;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-top: 100px;
-}
-
-#home::before {
-    content: '';
-    background: url("https://i.ibb.co/wwJBHRK/brooke-lark-F-5g8-EEHYE-unsplash.jpg") no-repeat center center/cover;
-    background-attachment: fixed;
-    height: 35rem;
-    width: 100vw;
-    z-index: -1;
-    position: absolute;
-    top: 0px;
-    opacity: 0.5;
-}
-
-
-#home p {
-    padding: 2rem 1.3em;
-    font-size: 0.9rem;
-    width: 500px;
-}
-
-
-/*=================SERVICES SECTION==================*/
-
-.services {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.servBox {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-    height: 320px;
-    width: 320px;
-    border: 2px solid #BDAE70;
-    background-color: black;
-    color: white;
-    /* background-color: #B3A051; */
-    border-radius: 23px;
-    box-shadow: 25px 25px 30px rgba(4, 24, 34, 255);
-}
-
-.servBox img {
-    height: 80px;
-    width: 80px;
-    display: block;
-    margin: auto;
-    border-radius: 40%;
-}
-
-/* =================CONTACT FORM================= */
-
-.form {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    justify-content: center;
-    align-items: center;
-    height: 20rem;
-    width: 35rem;
-    border: 2px solid white;
-    background-color: black;
-    border-radius: 1rem;
-    box-shadow: 25px 25px 30px rgba(4, 24, 34, 255);
-}
-
-.element {
-    text-align: center;
-    height: 2rem;
-    width: 15rem;
-    margin: 1rem;
-    padding: 1rem; 
-    border: 2px solid black;
-    transition: all 0.3s ease-in-out;
-}
-
-.element:hover {
-    border: 4px solid white;
-    border-radius: 2rem;
-    font-weight: bold;
-}
-
-#feedback {
-    height: 5rem;
-    width: 30rem;
-}
-
-
-/* =============FOOTER================ */
-
-#footer{
-    height: 10rem;
-    width: 100vw;
-    background-color: black;
-    color: white;
-    margin: 1.5rem 0px 0px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-
-li{
-    list-style: none;
-}
-
-.flex li a{
-    color: white;
-    text-decoration: none;
-}
-
-.flex li{
-    margin: 10px;
-}
-
-.flex li a:hover{
-    text-decoration: underline;
-}
-
-/* ===========UTILITY CLASSES======== */
-
-.heading-primary {
-    padding: 10px;
-    margin-top: 50px;
-}
-
-.center {
-    text-align: center;
-}
-
-.btn {
-    display: block;
-    margin: auto;
-    padding: 6px;
-    font-weight: bold;
-    border-radius: 10px;
-    width: 5rem;
-    color: black;
-    cursor: pointer;
-    transition: all 1s ease;
-}
-
-.btn:hover {
-    width: 10rem;
-    background-color: black;
-    color: whitesmoke;
-}
-
-p {
-    margin: auto;
-    font-family: 'Sniglet';
-    font-weight: 1000;
-}
-
-.heading-secondary {
-    padding: 1rem;
-}
-
-hr{
-    color: white;
-    width: 100vw;
-    opacity: 0.5;
-}
-
-.flex{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-.bold{
-    font-weight: 1000;
-}
-</style>
-
-<body>
-    <header>
-        <nav id="navbar">
-            <div class="container">
-                <div class="logo">
-                    <img src="https://i.ibb.co/n0f1MT4/Pics-Art-12-13-11-54-50.jpg" alt="logo" border="0">
-                    </div>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#serv">Services</a></li>
-                    <li><a href="#contact">Contact Us</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <section id="home">
-        <div id="black">
-            
-        <h1 class="heading-primary center">
-            Welcome to Food Point
-        </h1>
-        <p class="center">Lorem ipsum dolor sit amet, consectetur adip
-            iscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enimis nostrud exercitation ullamco laborisip ex ea</p>
-
-            <button class="btn" type="submit">Order Now</button>
-        </div>
-    </section>
+#ka{
+    width:52vw;
     
-    <section id="serv">
-        <h1 class="heading-primary center">Our Services</h1>
-        <div id="services">
+}
+#pa{
+position:absolute ;
+    top:77vh;
+    left:31vw;
+    height:5vh;
+    width:45vw;
+}
+#apa{
+position:absolute ;
+    top:77vh;
+    left:35vw;
+    display:none;
+    width:40vw;
+    height:5vh;
+    box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.35) ,
+   -3px -3px 5px -2px #655858 ;
+    color:#fff;
+    background-color:#3b3b3b;
+    border-style:none;
+}
+input[type="button"]{
+margin-left:3px;
+    background-color:black;
+    border-radius:40px;
+    color:#fff;
+    font-family:'Luckiest Guy', cursive;
+    box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.35) ,
+   -3px -3px 5px -2px #655858 ;
+    color:#fff;
+    background-color:#3b3b3b;
+    border-style:none;
+}
+#create{
+    height:60vh;
+    width:80vw;
+    position:relative ;
+    left:0;
+    right:0;
+    top:10vh;
+    margin:auto;
+    justify-content:center ;
+    align-items:center ;
+    display:none;
+    background-color:#3b3b3b;
+    border-radius:10%;
+    box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.35) ,
+   -3px -3px 5px -2px #655858 ;
+     color:#fff;
+    font-family:'Luckiest Guy', cursive;
+}
+#createpas{
+    position:absolute ;
+    top:30%;
+    left:20%;
+    height:7vh;
+    width:47vw;
+    font-size:1.4rem;
+    outline:none;
+    border-style:none;
+    background-color:#3b3b3b;
+    box-shadow: inset  3px 3px 15px -2px rgba(0,0,0,0.35) ,inset 
+   -3px -3px 5px -2px #655858 ;
+     color:#fff;
+    font-family:'Luckiest Guy', cursive;
+    transition:0.3s;
+}
+#createpas2{
+    position:absolute ;
+    top:55%;
+    left:20%;
+    height:7vh;
+    width:47vw;
+    font-size:1.4rem;
+    outline:none;
+    border-style:none;
+    background-color:#3b3b3b;
+    box-shadow:inset  3px 3px 15px -2px rgba(0,0,0,0.35) ,inset 
+   -3px -3px 5px -2px #655858 ;
+    color:#fff;
+    font-family:'Luckiest Guy', cursive;
+    transition:0.3s;
+}
+#done{
+    position:absolute ;
+    top:80%;
+    left:27%;
+    width:50%;
+    box-shadow: 3px 3px 15px -2px rgba(0,0,0,0.35) ,
+   -3px -3px 5px -2px #655858 ;
+    color:#fff;
+    background-color:#3b3b3b;
+    border-style:none;
+}
+#createpas:hover{
+    border-radius:60px;
+}
+#createpas2:hover{
+    border-radius:60px;
+}
+.notice{
+    height:7vh;
+    width:60vw;
+    background-color:rgba(255,255,255,0.5);
+    border-radius:50px;
+    position:absolute ;
+    z-index:3;
+    top:40vh;
+    left:22vw;
+    display:flex;
+    color:#fff;
+    font-family:'Luckiest Guy', cursive;
+    justify-content:center ;
+    align-items:center ;
+}
+.h3{
+    position:absolute ;
+    top:5vh;
+    left:10vw;
+    
+}
+#Random{
+    position:relative  ;
+    top:30%;
+    left:83%;
+    background-color:#3b3b3b;
+    color:#fff;
+    font-family:'Luckiest Guy', cursive;
+    border:none;
+    height:7vh;
+    width:7vh;
+}
+#Random2{
+    position:relative  ;
+    top:30%;
+    left:-8%;
+    background-color:#3b3b3b;
+   z-index:2;
+    color:#fff;
+    font-family:'Luckiest Guy', cursive;
+    border:none;
+    height:7vh;
+    width:7vh;
+}
+#load{
+    height:135vh;
+    width:106vw;
+    right:0;
+    left:0;
+    top:0;
+    bottom:0;
+    position:absolute;
+    background:#000 url("https://i.pinimg.com/originals/a6/24/42/a624428f7f43dc10ce3fcf523089f325.gif") no-repeat center;   
+       
+      z-index:10;
+       
+       
+       
+}
+#locker{
+    height:130vh;
+    width:106vw;
+    background-color:#fff;
+    z-index:4;
+    position:absolute ;
+    bottom:0vh;
+    overflow:hidden ;
+    box-sizing:border-box ;
+    top:0vh;
+    background-attachment:fixed;
+    color:#000;
+    align-items:center ;
+    justify-content:center ;
+    display:flex;
+}
+
+
+.arro{
+    z-index:6;
+    background-color:#fff;
+    position:fixed ;
+    left:2vh;
+    top:2vh;
+    color:#000;
+    width:30px;
+    height:30px;
+}
+.obj{
+    font-weight:900;
+    background-color:lightgrey;
+    border-radius:20px;
+    width:70%;
+    height:70%;
+    position:absolute ;
+    top:15vh;
+    bottom:0;
+}
+
+#madi{
+    position:fixed;
+}
+textarea{
+    font-weight:900;
+    background-color:lightgrey;
+    width:90%;
+    border-style:none;
+    border:none;
+    position:relative;
+    top:4%;
+    left:0;
+    right:0;
+    height:90%;
+    font-family: cursive;
+}
+::-webkit-input-placeholder { 
+color: peachpuff; 
+font-size: 13px; } 
+::-moz-placeholder { 
+color: peachpuff; font-size: 13px; 
+} 
+:-ms-input-placeholder { 
+color: peachpuff; font-size: 13px; 
+} 
+::placeholder { 
+color: peachpuff; 
+font-size: 13px; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </style>
+    <body onclick="tal()">
+    <div id="locker">
+    <div class="arro" id="vacki"><i class="fa fa-arrow-left" id="madi"></i></div>
+    <div class="obj" ><textarea contenteditable="true">Empty, Use this as a notePad</textarea></div>
+    </div>
+    
+    <div id="load">
         
-            <div class="servBox" id="servBox1">
-                <h2 class="heading-secondary">Food Ordering</h2>
-                <img src="https://i.ibb.co/pZxzrHL/images-1.jpg" alt="food ordering">
-                <p class="center">Lorem ipsum se dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                
-            </div>            
-            <div class="servBox" id="servBox2">
-                <h2 class="heading-secondary">Fast Delivery</h2>
-                <img src="https://i.ibb.co/9TKJWWc/images-2.jpg" alt="fast delivery">
-                <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                
-            </div>            
-            <div class="servBox" id="servBox3">
-                <h2 class="heading-secondary">Catering</h2>
-                <img src="https://i.ibb.co/vJvrgVp/1776716.jpg" alt="catering">
-                <p class="center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
-                
-            </div>            
-        </div>
-    </section>
-    
-    <section id="contact">
-        <h1 class="heading-primary center">
-            Contact Us
-        </h1>
-        <div class="form">
-            
-        <form action="#" method="get" accept-charset="utf-8">
-            
-            <input type="text" name="name" id="name" class="element" placeholder="Name"/><br />
-            
-            <input type="email" name="Email" id="Email" class="element" placeholder="E-mail"/><br />
-            
-            <textarea name="feedback" id=feedback rows="8" cols="20" class="element" placeholder="Enter Your Thoughts..."></textarea>
-            
-            <input type="submit" name="submit" id="submit"
-            class="btn"/>
+    </div>
+    <div class="notice" id="done2">Done 👍</div>
+       <div class="notice" id="wrong">Wrong ❌</div>
+          <div class="notice" id="same">✖️✖️✖️</div>
+          
+     <input type="text" id="head" value="Hello" disabled>
+        <div id="tat">
+       <br>
+             <form name="mm" class="nn">
+            <input type="display" name="ss" id="mad" class="bat" disabled>
+            <br>
+            </br><div class="buttons">
+                 <input type="button" class="bt" value="0" onclick="mm.ss.value+= '0'">
+               <input type="button" class="bt" value="1" onclick="mm.ss.value+= '1'">
+                  <input type="button"  class="bt" value="2" onclick="mm.ss.value+= '2'">
+            <input type="button" value="3" class="bt" onclick="mm.ss.value+= '3'">
+               <input type="button" value="4" class="bt" onclick="mm.ss.value+= '4'">
+               <br>
+               </br>
+               <input type="button" value="5" class="bt" onclick="mm.ss.value+= '5'">
+               
+               <input type="button" value="6" class="bt" onclick="mm.ss.value+= '6'">
+               <input type="button" value="7" class="bt" onclick="mm.ss.value+= '7'">
+               <input type="button" value="8" class="bt" onclick="mm.ss.value+= '8'">
+               <input type="button" value="9" class="bt" onclick="mm.ss.value+= '9'">
+               <br>
+               </br>
+               
+                 <input type="button" value="Back" onclick="back()" id="za"><br></br>
+                       <input type="button" value="Enter" onclick="val()" id="ka">  </div><br></br>
+     
+             
         </form>
-        </div>
-    </section>
     
-    <footer>
-        <div id="footer" class="center">
-            <ul id="about" class="flex">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Blog</a></li>
-            </ul>
-            
-            <ul class="flex" id="follow">
-                <li class="bold">Follow us</li>
-                <li><a href="#">Twitter</a></li>
-                <li><a href="#">Facebook</a></li>
-                <li><a href="#">Instagram</a></li>
-                <li><a href="#">Youtube</a></li>
-            </ul>
-            
-            <hr />
-            <ul id="policy" class="flex">
-                <li><a href="#">F.A.Q.</a></li>
-                <li><a href="#">Cookies Policy</a></li>
-                <li><a href="#">Legal Terms</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-            
-            <p>2020 &copy; All Rights Reserved</p>
-        </div>
-    </footer>
-</body>
+      
+       
+                    </div> 
+                    <input type="button" id="pa" value="Set the Password" onclick="va()">
+                     <input type="button" id="apa" value="OK" onclick="vap()">  
+     <div id="create">
+        <h3 class="h3">Create your password</h3>
+        <button onclick="btns()" id="Random"><i class="fa fa-random"></i></button>
+            <button onclick="bt()" id="Random2"><i class="fa fa-clone"></i></button>
+         <input type="number" id="createpas" placeholder="Enter your new password"><br><br />
+   <input type="number" id="createpas2" placeholder="Enter your new password" ><br></br>
+   <input type="Button" id="done" value="Done" onclick="hal()">
+     </div>   
+    </body>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=UZXDfLFP" ></script>
+    <script>
+        var don = document.getElementById("done2");
+var wro = document.getElementById("wrong");
+var same = document.getElementById("same");
 
+var bat = prompt("Enter your Name");
+alert("Please suggest me in comments");
+alert("At the bottom there is the button to set password ")
+
+function hal(){
+var disp = document.getElementById("mad").value;
+    var pas1 = document.getElementById("createpas").value;
+    var pas2 = document.getElementById("createpas2").value;
+    if(pas2==pas1 && pas1 != null && pas1 != undefined && pas1 != "" ){
+        pas2 = disp;
+        responsiveVoice.speak(", Done");
+        $("#done2").show();
+        setTimeout(function(){
+            $("#done2").hide();
+        },2000)
+    }
+    else{
+       responsiveVoice.speak(bat + " ,Enter the same password for both the inputs");
+       $("#same").show();
+       setTimeout(function(){
+            $("#same").hide();
+        },2000)
+    }
+}
+function va(){
+var kaz = document.getElementById("pa").value;
+
+    $("#create").toggle();
+    $("#tat").toggle();
+    $("#apa").toggle();
+    $("#pa").toggle();
+}
+function vap(){
+      $("#tat").toggle();
+      $("#create").toggle();
+      $("#pa").toggle();
+      $("#apa").toggle();
+      
+}
+function val(){
+var div = document.getElementById("tat");
+var pas1 = document.getElementById("createpas").value;
+    var pas2 = document.getElementById("createpas2").value;
+var disp = document.getElementById("mad").value;
+if(disp==pas2 && disp==pas1 && pas2 != null && pas2 != undefined && pas2 != "" && pas2 == pas2){
+    $("#done2").show();
+    setTimeout(function(){
+            $("#done2").hide();
+        },2000)
+    responsiveVoice.speak(bat +" ,Your Password is Verified");
+    div.style.backgroundColor = "green";
+    setTimeout(function(){
+        div.style.backgroundColor = "#3b3b3b";
+    },2000)
+    setTimeout(function(){
+   $("#locker").show();
+   },2500);
+    
+}
+
+else{
+$("#wrong").show();
+    setTimeout(function(){
+            $("#wrong").hide();
+        },2000)
+    responsiveVoice.speak(bat + ", Your Password is incorrect!");
+    div.style.backgroundColor = "red";
+    setTimeout(function(){
+        div.style.backgroundColor = "#3b3b3b";
+    },2000)
+}
+
+}
+function back() {
+
+    var value = document.getElementById("mad").value;
+    document.getElementById("mad").value = value.substr(0, value.length - 1);
+}
+window.addEventListener("load",function(){
+var lo = document.getElementById("load");
+lo.style.display = "none";
+
+var he = "Hello ";
+var bb = document.getElementById("head").value = he+bat;
+$("#done2").hide();
+$("#wrong").hide();
+$("#same").hide();
+$("#locker").hide();
+$("#vacki").click(function(){
+    $("#locker").hide();
+})
+});
+function tal(){
+    if(window.navigator.vibrate){
+        window.navigator.vibrate(30);
+    }
+}
+function btns(){
+var chars = "1234567890";
+   
+   var passwordLength = prompt("Enter the length of the password ");
+
+ var password = "";
+   for(var i=0; i< passwordLength; i++){
+       var randomNumber = Math.floor(Math.random()* chars.length);
+       password += chars.substring(randomNumber,randomNumber + 1);
+        document.getElementById("createpas").value = password;
+document.getElementById("createpas2").value = password;        
+        responsiveVoice.speak("Random password generated");
+   }
+ 
+}
+function bt(){
+        var man = document.getElementById("createpas");
+        
+man.select();
+document.execCommand('copy');  
+responsiveVoice.speak("Copied");
+
+
+}
+
+
+
+
+
+    </script>
 </html>
